@@ -13,7 +13,7 @@ Installation Steps
 ```bash
 python -m venv .env
 source .env/bin/activate
-pip install datapizza-ai
+pip install datapizza-ai==0.0.7
 pip install datapizza-ai-cache-redis
 ```
 
