@@ -4,6 +4,8 @@ A Server Side Template Injection in *datapizza-ai* caused by usage of unsafe fun
 
 ### Details
 
+CVSSv3: CRITICAL 9.1/10 `CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H`
+
 datapizza-ai version: `v0.0.2`
 
 Installation Steps
