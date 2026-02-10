@@ -8,14 +8,6 @@ CVSSv3: CRITICAL 9.1/10 `CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H`
 
 datapizza-ai version: `v0.0.2`
 
-Installation Steps
-
-```bash
-python -m venv .env
-source .env/bin/activate
-pip install datapizza-ai==0.0.2
-```
-
 The vulnerability is caused by the usage of vulnerable functions of Jinja2 template engine (*datapizza-ai-core/datapizza/modules/prompt/prompt.py*, source here <https://github.com/datapizza-labs/datapizza-ai/blob/v0.0.2/datapizza-ai-core/datapizza/modules/prompt/prompt.py>).
 
 ```python
@@ -37,6 +29,16 @@ formatted_retrieval = self.retrieval_prompt_template.render(chunks=chunks)
 ```
 
 ### PoC
+
+Installation Steps
+
+```bash
+python -m venv .env
+source .env/bin/activate
+pip install datapizza-ai==0.0.2
+```
+
+Create a python file with the following content
 
 ```python
 import uuid
@@ -63,6 +65,8 @@ print(
     )
 )
 ```
+
+Execute the file with `python3 poc.py`
 
 Output:
 
