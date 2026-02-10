@@ -8,15 +8,6 @@ CVSSv3: HIGH 7.7/10 `CVSS:3.1/AV:A/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H`
 
 datapizza-ai version: `v0.0.7`
 
-Installation Steps
-
-```bash
-python -m venv .env
-source .env/bin/activate
-pip install datapizza-ai==0.0.7
-pip install datapizza-ai-cache-redis
-```
-
 The vulnerability is caused by the usage of vulnerable functions of pickle serialization library (*datapizza-ai-cache/redis/datapizza/cache/redis/cache.py*, source here <https://github.com/datapizza-labs/datapizza-ai/blob/v0.0.7/datapizza-ai-cache/redis/datapizza/cache/redis/cache.py>).
 
 ```python
@@ -38,6 +29,15 @@ class RedisCache(Cache):
 ```
 
 ### PoC
+
+Installation Steps
+
+```bash
+python -m venv .env
+source .env/bin/activate
+pip install datapizza-ai==0.0.7
+pip install datapizza-ai-cache-redis
+```
 
 Spin up a Redis server
 
@@ -75,6 +75,8 @@ def test_redis_cache():
 
 test_redis_cache()
 ```
+
+Execute the file with `python3 poc.py`
 
 Command injection result (`ls -alh`):
 
