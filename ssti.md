@@ -13,7 +13,7 @@ Installation Steps
 ```bash
 python -m venv .env
 source .env/bin/activate
-pip install datapizza-ai
+pip install datapizza-ai==0.0.2
 ```
 
 The vulnerability is caused by the usage of vulnerable functions of Jinja2 template engine (*datapizza-ai-core/datapizza/modules/prompt/prompt.py*, source here <https://github.com/datapizza-labs/datapizza-ai/blob/v0.0.2/datapizza-ai-core/datapizza/modules/prompt/prompt.py>).
