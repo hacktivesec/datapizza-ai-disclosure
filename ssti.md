@@ -100,4 +100,4 @@ Here a simple Proof of Concept code snippet is shown, but in reality every featu
 
 ### Credits
 
-Edoardo Ottavianelli (@edoardottt)
+Edoardo Ottavianelli ([@edoardottt](https://github.com/edoardottt))

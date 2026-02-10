@@ -4,7 +4,7 @@ An Unsafe Deserialization via *pickle.loads()* in datapizza-ai Redis cache allow
 
 ### Details
 
-HIGH 7.7/10 `CVSS:3.1/AV:A/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H`
+CVSSv3: HIGH 7.7/10 `CVSS:3.1/AV:A/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H`
 
 datapizza-ai version: `v0.0.7`
 
@@ -100,4 +100,4 @@ Here a simple Proof of Concept code snippet is shown, but in reality every featu
 
 ### Credits
 
-Edoardo Ottavianelli (@edoardottt)
+Edoardo Ottavianelli ([@edoardottt](https://github.com/edoardottt))
